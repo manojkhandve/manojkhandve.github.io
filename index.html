@@ -12,93 +12,136 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="logo">
-        <img src="images/mlogo.jpg" alt="My Logo" />
-      </div>
-      <div class="toggle" id="toggle">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#projects">Project</a></li>    
-        <li><a href="#contact">Contact</a></li>    
-        
-      </ul>
-    </nav>
+    <header>
+      <nav>
+        <div class="logo">
+           Manoj
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+           <li><a class="active" href="#">Home</a></li>
+           <li><a href="#abouts" onclick="closeMenu()">About</a></li>
+           <li><a href="#skil"onclick="closeMenu()">Skills</a></li>
+           <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
+           <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+           <li><a href="#education" onclick="closeMenu()">Education</a></li>
+           <li><a href="#contacts"onclick="closeMenu()">Contact</a></li>
+        </ul>
+     </nav>
+    
+    </header>
+  
     
     <main>
       <div class="container">
         <div id="intro">
-            <h4 id="name">Hello</h4>
-            <h4 id="iam">It's Me <span class="namc">Manoj Khandve</span></h4>
-            <span id="role"></span> <!-- This will be populated by JavaScript -->
-            
-            <div id="txt">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, eius
-                veritatis.<br />
-                Placeat ducimus modi tempore totam corporis explicabo eligendi.
-                Ducimus.
-            </div>
-            <div class="butcon">
-                <button class="con" id="contactMe">Contact Me</button>
-                <button class="con" id="dc">Download CV</button>
-            </div>
+          <h4 id="name">Hello</h4>
+          <h4 id="iam">It's Me <span class="namc">Manoj Khandve</span></h4>
+          <span id="role">Full Stack Java Developer</span>
+      
+          <div id="txt">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, eius
+            veritatis.<br />
+            Placeat ducimus modi tempore totam corporis explicabo eligendi. Ducimus.
+          </div>
+      
+          <button class="con" id="contactMe">Contact Me</button>
         </div>
+        
         <div class="img">
-            <img id="imag" src="images/profile.png" alt="image" />
-        </div>
-    </div>
-
- <section id="about">
-
-  <h1 class="hcontent ">ABOUT ME</h1>
-      <div class="aboutm">
-        <div class="ima">
-          <img id="images"src="images/profile.png" alt="image" />
-        </div>
-        <div class="abinfo">
-          <p id="abme">
-            Hi! I’m Manoj Khandve, and I’m a developer who has passion for building clean applications  with intuitive functionalities. I enjoy the process of turning ideas into reality using creative solutions. I’m always curious about learning new skills, tools, and concepts. In addition to working on various solo full stack projects, I have worked with creative teams, which involves   communications, source control, and project management.
-          </p>        
+          <img id="imag" src="images/profile.png" alt="image" />
         </div>
       </div>
- </section>
       
- <section id="skills">
+      <h1 id="abouts" class="hcontent">ABOUT ME</h1>
+      <section id="about">
+        
+        <div class="aboutm">
+          <div class="ima">
+            <img id="images" src="images/profile.png" alt="image" />
+          </div>
+          <div class="abinfo">
+            <p id="abme">
+              Hi! I’m Manoj Khandve, and I’m a passionate developer with a love for building clean applications that prioritize user experience and intuitive functionality. I enjoy the process of turning complex ideas into reality using creative and practical solutions. 
+              <br><br>
+              With a constant drive for learning, I am always exploring new technologies, tools, and best practices to stay on the cutting edge of the software development world. I thrive in dynamic, collaborative environments where I can work with others and contribute to innovative projects.
+              <br>
+    
+            
+        </div>
+      </section>
+    
+ 
+      <h1 id="skil" class="hcontent">Skills</h1>
+      <section id="skills">
+        
+        <div class="skill">
+            <!-- Frontend Section -->
+            <div class="front">
+                <h2>Frontend:</h2>
+                <ul>
+                    <li>
+                        <i class="fab fa-html5"></i>
+                        <p>HTML</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-css3-alt"></i>
+                        <p>CSS</p>
+                    </li>
+                   
+                    <li>
+                        <i class="fab fa-js"></i>
+                        <p>JavaScript</p>
+                    </li>      
+                    <li>
+                        <i class="fab fa-react"></i>
+                        <p>React JS</p>
+                    </li>
+                </ul>
+            </div>
 
-  <h1 class="hcontent ">SKILLS</h1>
- <div class="skill">
-  <div class="front">
-    <h2>FRONTEND:</h2>
-    <ul>
-      <li><i class="fab fa-html5  "></i> HTML</li>
-      <li><i class="fab fa-css3-alt"></i> CSS</li>
-      <li><i class="fab fa-bootstrap"></i>TALIWIND CSS</li>
-      <li><i class="fab fa-js"></i> JAVASCRIPT</li>      
-      <li><i class="fab fa-angular"></i> React JS</li>
-    </ul>
-  </div>
+            <!-- Backend Section -->
+            <div class="back">
+                <h2>Backend:</h2>
+                <ul>
+                    <li>
+                        <i class="fab fa-java"></i>
+                        <p>Core Java</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-java"></i>
+                        <p>Advanced Java</p>
+                    </li>
+                   
+                    <li>
+                        <i class="fas fa-cogs"></i>
+                        <p>Spring Boot</p>
+                    </li>     
+                  
+                </ul>
+            </div>
 
-  <div class="back">
-    <h2>BACKEND:</h2>
-    <ul>
-      <li><i class="fab fa-java"></i> CORE JAVA</li>
-      <li><i class="fab fa-java"></i> ADVANCE JAVA</li>
-      <li><i class="fas fa-cogs"></i> SPRING</li>
-      <li><i class="fas fa-cogs"></i> SPRINGBOOT</li>     
-      <li><i class="fas fa-database"></i> POSTGRESQL</li>
-    </ul>
-  </div>
-</div>
+            <!-- Database Section -->
+            <div class="database">
+                <h2>Database:</h2>
+                <ul>
+                    <li>
+                        <i class="fas fa-database"></i>
+                        <p>MySQL</p>
+                    </li>
+                   
+                    <li>
+                      <i class="fas fa-database"></i>
+                      <p>PostgreSQL</p>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
- </section>
 
  <h1 class="hcontent " id="experience">EXPERIENCE</h1>
  <section   class="experience-section">     
