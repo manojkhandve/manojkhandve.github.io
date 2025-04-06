@@ -3,6 +3,16 @@ document.getElementById('toggle').addEventListener('click', function() {
     navLinks.classList.toggle('active');
 });
 
+function closeMenu() {
+    const checkbox = document.getElementById('click');
+    checkbox.checked = false;
+  }
+
+
+  document.getElementById("contactMe").addEventListener("click", function() {
+    window.open("https://wa.me/708370808", "_blank");
+});  
+
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('contactForm').addEventListener('submit', function(event) {
         event.preventDefault();
@@ -17,34 +27,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const roleText = "Full Stack Java Developer"; 
-    const roleElement = document.getElementById('role');
-    let index = 0;
-  
-    function typeCharacter() {
-        if (index < roleText.length) {
-            roleElement.textContent += roleText.charAt(index); 
-            index++;
-            setTimeout(typeCharacter, 100); 
-        } else {
-            setTimeout(() => {
-                roleElement.textContent = '';  
-                index = 0;  
-                typeCharacter();  
-            }, 1000);  
-        }
-    }
-  
-    typeCharacter(); 
-});
 
-document.getElementById("contactMe").addEventListener("click", function() {
-    window.open("https://wa.me/708370808", "_blank");
-});
+
 
 document.getElementById("dc").addEventListener("click", function() {
     const link = document.createElement('a');
     link.href = 'images/manoj_resume.pdf';  
     link.click();  
 });
+
+
